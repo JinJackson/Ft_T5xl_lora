@@ -70,7 +70,7 @@ def load_binary_class_examples(args, tokenizer, evaluate=False):
         logger.info("Loading training data from %s", type_path)
         dataset = TrainDataset(tokenizer, data_dir=args.data_dir, type_path=type_path, max_source_length=args.max_src_len, max_target_length=args.max_tgt_len)
     else:
-        
+        pass
     return dataset
 
 
